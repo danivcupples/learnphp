@@ -6,13 +6,13 @@
 		<aside class="col-xs-4">
 
 	<?php Navigation();?>
-			
-			
+
+
 		</aside><!--SIDEBAR-->
 
 
 		<article class="main-content col-xs-8">
-		
+
 
 
 		<?php
@@ -27,16 +27,27 @@
 		  Step4: Make a constant and set it to the value of PHP. and use an echo to print it out
 
 
-			
-
 			 */
+   		$number1 = 10;
+			$number2 = 20;
 
-		
+			echo $number1 + $number2 . "<br>";
+
+			$array1 = [10, 20];
+			$array2 = ['number1' => 10, 'number2' => 20];
+
+			print_r($array1);
+			print_r($array2);
+
+			define('value', 'PHP');
+
+			echo $value;
+
 
 
 		?>
 
-	
+
 
 		</article><!--MAIN CONTENT-->
 
