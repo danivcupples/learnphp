@@ -6,19 +6,19 @@
 	<aside class="col-xs-4">
 
 	<?php Navigation();?>
-			
-			
+
+
 	</aside><!--SIDEBAR-->
 
 
 <article class="main-content col-xs-8">
-		
 
 
-		<?php  
+
+		<?php
 
 
-		/* 
+		/*
 		   Step 1:  Use the Echo Function to say hello with html h1                  tags embedded inside php.
 
 
@@ -28,9 +28,15 @@
 
 		   */
 
-		?>
 
-	
+		?>
+<h1>
+	<?php
+	 	//print hello to the screen
+		echo "hello!"
+	?>
+</h1>
+
 
 		</article><!--MAIN CONTENT-->
 
