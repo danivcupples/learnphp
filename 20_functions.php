@@ -6,40 +6,26 @@
 </head>
 <body>
 
-<?php 
+<?php
+
+function say_something ($name){
+    echo "Hi there, " . $name . "!";
+}
+
+function add($num1, $num2){
+    echo ($num1 + $num2);
+}
 
 function init(){
-
-
-say_Something();
-echo "<br>";
-calculate();  
-
+  echo "hey there" . "<br>";
+  say_something("Cutie");
+  echo "<br>";
+  add(4, 6);
 }
 
+init();
 
-
-
-function calculate(){
-
-    echo 456 + 345;
-
-}
-
-
-function say_Something(){
-
-   echo "Hello Student, do you like the class? yes? okay great";
-
-}
-
-  init();  
-    
-    
-    
 ?>
-
-
 
 </body>
 </html>

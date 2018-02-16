@@ -6,45 +6,29 @@
 </head>
 <body>
 
-<?php 
+<?php
 
-function greeting($message){
-    echo $message;
+function greeting($name){
+  echo "Hello, " . $name;
 }
 
+greeting("Dani");
 
-greeting("Hi Customer how are you?");
-    
-    
-?>
+function calculate($n1, $n2){
+  $sum = $n1 + $n2;
+  $difference = $n1 - $n2;
+  $product = $n1 * $n2;
+  $quotient = $n1/$n2;
 
-<?php 
-    
-
-function addNumbers($number1, $number2){
-
-$sum = $number1 + $number2;
-
-echo $sum;
-    
+  echo "<p>The sum of " . $n1 . " and " . $n2 . " is " . $sum . ".</p>";
+  echo "<p>The difference of " . $n1 . " and " . $n2 . " is " . $difference . ".</p>";
+  echo "<p>The product of " . $n1 . " and " . $n2 . " is " . $product . ".</p>";
+  echo "<p>The quotient of " . $n1 . " and " . $n2 . " is " . $quotient . ".</p>";
 }
 
+calculate(42, 42);
 
-addNumbers(345,3462);
-    
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

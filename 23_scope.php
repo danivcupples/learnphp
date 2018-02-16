@@ -5,29 +5,22 @@
     <title>Document</title>
 </head>
 <body>
-<?php 
+<?php
 
-$x = "outside"; // global
+$x = "outside";
 
-function convert() {
-global $x;
-$x = "inside"; // local 
-
+function convert(){
+  global $x;
+  $x = inside . "<br>";
+  echo $x;
 }
 
-
-echo $x;
-
-echo "<br>";
+echo $x . "<br>";
 
 convert();
 
 echo $x;
 
-echo $x;
-
-    
-    
 ?>
 
 </body>
