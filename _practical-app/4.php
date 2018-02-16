@@ -6,15 +6,15 @@
 	<aside class="col-xs-4">
 
 		<?php Navigation();?>
-			
-		
+
+
 	</aside><!--SIDEBAR-->
 
 
 <article class="main-content col-xs-8">
 
-	
-	<?php  
+
+	<?php
 
 /*  Step1: Define a function and make it return a calculation of 2 numbers
 
@@ -23,7 +23,15 @@
 
  */
 
-	
+ function calc($x, $y){
+	 $product = $x * $y;
+	 return $product;
+ }
+
+ $result = calc(12, 17);
+
+ echo $result;
+
 ?>
 
 

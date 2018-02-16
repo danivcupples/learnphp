@@ -5,27 +5,20 @@
     <title>Document</title>
 </head>
 <body>
-   
-<?php 
-$number = 10;
-$number = 1000;
 
-$number = "Edwin";
+<?php
+
+$number = 10;
 echo $number . "<br>";
 
 define("NAME", 1000);
-
+//this method defines a constant, which cannot be reassigned.
 echo NAME;
 
-
-
-    
-    
-    
 ?>
-   
- 
-   
-    
+
+
+
+
 </body>
 </html>
