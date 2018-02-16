@@ -6,18 +6,14 @@
 </head>
 <body>
 
-<?php 
+<?php
 
-$counter = 0;
-while($counter <= 10 ){
+  $a = 0;
 
-    echo $counter;
-    $counter++;
-//    $counter = $counter + 1;
-
-}
-
-
+  while ($a <= 10) {
+    echo "hello!" . "<br>";
+    $a++;
+  }
 
 ?>
 

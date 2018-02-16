@@ -6,18 +6,13 @@
 </head>
 <body>
 
-<?php 
+<?php
 
-for($counter = 0; $counter < 10; $counter++){
+  for ($x = 0; $x < 10; $x++){
+    echo "<p>" . $x . "</p>";
+  }
 
-    echo $counter . "<br>" ;
-
-}
-    
-    
-    
 ?>
-
 
 </body>
 </html>
