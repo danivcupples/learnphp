@@ -6,23 +6,21 @@
 </head>
 <body>
 
-<?php 
+<?php
 
-$list = [343,34,323,23,54,232,453];
+$list = [343, 34, 323, 23, 45, 232, 453];
 
 echo max($list);
 
 echo "<br>";
-    
-echo min($list);
 
+echo min($list);
 
 echo "<br>";
 
 sort($list);
-    
-print_r($list);
 
+print_r($list);
 
 ?>
 

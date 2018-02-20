@@ -8,7 +8,11 @@
 
 <?php
 
-$string = "Hello student do you like the class";
+$string = "Hello, students! Do you like the class?";
+
+echo $string;
+
+echo "<br>";
 
 echo strlen($string);
 
@@ -20,9 +24,6 @@ echo "<br>";
 
 echo strtolower($string);
 
-
-
-    
 ?>
 
 </body>

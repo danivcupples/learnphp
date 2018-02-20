@@ -5,14 +5,14 @@
     <title>Document</title>
 </head>
 <body>
-<?php
 
+<?php
 
 echo pow(2,7);
 
 echo "<br>";
 
-echo rand(1, 1000);
+echo rand(1, 100);
 
 echo "<br>";
 
@@ -20,19 +20,17 @@ echo sqrt(100);
 
 echo "<br>";
 
-echo ceil(4.6);
+echo ceil(98.5);
 
 echo "<br>";
 
-echo floor(4.6);
+echo floor(98.5);
 
 echo "<br>";
 
-echo round(4.5);
+echo round(98.4);
 
 ?>
-
-
 
 </body>
 </html>
