@@ -1,46 +1,32 @@
-<?php 
+<?php
 
 if(isset($_POST['submit'])) {
-    
-$name = array("Edwin", "Student", "Peter", "Samid", "Mohad", "Maria", "Jane", "tom");
-    
-    $minimun = 5;
-    $maximun = 10;
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-    
-  if(strlen($username) < $minimun ) {
-  
-      echo "Username has to be longer than five";
-  
-  }  
-    
-    if(strlen($username) > $maximun  ) {
-  
-      echo "Username cannot be longer than 10 ";
-  
-  }  
-    
-    if(!in_array($username,$name)) {
-    
-        echo " Sorry you are not allowed";
-    
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $minimum = 5;
+  $maximum = 10;
+  $names = ["Edwin", "Dani", "Houston", "Wendy"];
+
+  if(!in_array($username, $names)){
+    echo "Sorry, you do not have an account.";
+  } else {
+
+    if(strlen($username) > $maximum){
+      echo "Username must be fewer than " . $maximum . " characters.";
     } else {
-    
-    echo "Welcome";
-    }
-    
-    
-    
-    
-    
-//echo "Hello" . $username;   
-//echo "Your Password is " . $password;
 
+      if(strlen($password) < $minimum){
+        echo "Passwords must be " . ($minimum + 1) . " or more characters. Please choose a new password.<br>";
+      } else {
+        echo "Welcome!";
+      }
+
+    }
+
+  }
 
 }
-
-
 
 ?>
