@@ -1,16 +1,30 @@
-<?php include "db.php";?>
-<?php include "functions.php";?>
+<?php include "45_db.php";?>
+<?php include "45_46_52_53_functions.php";?>
 
-<?php include "includes/header.php" ?>
+<?php include "_includes/header.php" ?>
 
 <div class="container">
-    
+
     <div class="col-sm-6">
 
-    <pre>
-  <?php readRows(); ?>
-     </pre>
+    <!-- <pre> -->
+      <?php
+        while($row = mysqli_fetch_assoc($result)){
+      ?>
+
+          <pre>
+
+      <?php
+          print_r($row);
+
+          ?>
+        </pre>
+        <?php
+        }
+      //readRows();
+      ?>
+     <!-- </pre> -->
     </div>
 
 
-<?php include "includes/footer.php"?>
+<?php include "_includes/footer.php"?>
